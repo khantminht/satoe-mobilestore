@@ -28,8 +28,9 @@ header{
 
 .navmenus{
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);font-size: 10px;
-    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 5px;
 }
 
@@ -49,6 +50,10 @@ header{
 .menuitems:hover{
     border: 1px solid #999;
     border-radius: 30px;
+}
+
+.btn{
+    border: none;
 }
 
 .loginbtns{
@@ -161,6 +166,43 @@ header{
     background: #000;
 }
 
-
+.specsphotos{
+    display: block;
+    margin: auto;
+}
 /* End Specs Section */
+
+/* Start Detail Section */
+.detailphotos1,.detailphotos2,.detailphotos3,.detailphotos4,.detailphotos5,.detailphotos6{
+    display: block;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(150px);
+
+    transition: all 1s;
+}
+/* End Detail Section */
+
+/* Start Pricing Section */
+.list-group{
+    list-style-type: none;
+}
+
+.list-group-item{
+    border: none;
+    border-bottom: 1px solid #999;
+    
+}
+/* End Pricing Section */
+
+
+
+/* Start Related Section */
+.relatedphotos{
+    display: block;
+    margin: auto;
+
+    
+}
+/* End Related Section */
 
