@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    height: 100vh;
+    background: url("../assets/img/background/bg3.png"),#f4f4f4;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 30%;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+/* Start nav bar */
+.navbar{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px 5px;
+
+    transition: all 0.7s;
+}
+
+.navmenus{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px;
+}
+
+.menuitems{
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    padding: 5px;
+    margin: 0 8px;
+
+    transition: all 0.3s;
+}
+
+.menuitems:hover{
+    border: 1px solid #999;
+    border-radius: 30px;
+}
+
+.loginbtns{
+    color: #fff;
+    background-color: steelblue;
+    border-radius: 30px;
+}
+
+.loginbtns:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.loginbtns:active{
+    color: #fff;
+    transform: scale(1);
+}
+/* End nav bar */
+
+/* Start Banner */
+.banners{
+    width: 90%;
+
+    position: absolute;
+    left: 50%;
+    top: 45%;
+
+    transform: translateX(-50%);
+}
+
+.bannerheaders{
+    animation-name: bannerani;
+    animation-duration: 2s;
+}
+
+.bannerletters{
+    animation-name: bannerani;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bannerani {
+    from{
+        opacity: 0;
+        transform: translate(-70px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* End Banner */
+
+/* Start Specs Section */
+.titles{
+    display: inline-block;
+    padding: 5px 20px;
+    position: relative;
+}
+
+.titles::before,.titles::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+   
+    position: absolute;    
+}
+
+.titles::before{
+    border-right: 3px solid #999;
+    border-top: 3px solid #999;
+    border-radius: 0 15px 0 0;
+    right: 0;
+    top: 0;
+}
+
+.titles::after{
+    border-left: 3px solid #999;
+    border-bottom: 3px solid #999;
+    border-radius: 0 0 0 15px;
+    left: 0;
+    bottom: 0;
+}
+
+.specbtn{
+    color: grey;
+    font-size: 18px;
+    background: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    margin: 0 10px;
+    transition: all 0.3s;
+    animation-fill-mode: backwards;
+}
+
+.activespecs{
+    color: #fff;
+}
+
+.specbtn:hover{
+    border: 1px solid #999;
+    border-radius: 15px;
+}
+
+#specsection{
+    background: #000;
+}
+
+
+/* End Specs Section */
+
