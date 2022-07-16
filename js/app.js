@@ -43,6 +43,16 @@ $(window).scroll(function(){
 // Start Spec Section
 $(document).ready(function(){
 
+    $("#specsection").hide();
+
+    $(window).scroll(function(){
+        var getscrolltop = $(this).scrollTop();
+
+        if(getscrolltop >= ){
+
+        }
+    })
+
     $(".specbtn").click(function(){
         $(this).toggleClass("activespecs").siblings().removeClass("activespecs");
     });
@@ -147,7 +157,7 @@ $(window).scroll(function(){
         })
     }
 
-    if(getscrolltop >=3900){
+    if(getscrolltop >=4000){
         $(".detailphotos6").css({
             "opacity":"1",
             "transform":"translate(0)"

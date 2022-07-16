@@ -141,6 +141,10 @@ header{
     bottom: 0;
 }
 
+#specsection{
+    height: 700px;
+}
+
 .specbtn{
     color: grey;
     font-size: 18px;
@@ -184,6 +188,18 @@ header{
 /* End Detail Section */
 
 /* Start Pricing Section */
+.card{
+ 
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px #999;
+}
+
+
 .list-group{
     list-style-type: none;
 }
@@ -191,7 +207,6 @@ header{
 .list-group-item{
     border: none;
     border-bottom: 1px solid #999;
-    
 }
 /* End Pricing Section */
 
@@ -202,7 +217,13 @@ header{
     display: block;
     margin: auto;
 
-    
+    width: 65%;
 }
 /* End Related Section */
 
+/* What In box Section */
+.whatinboxphto{
+    display: block;
+    margin: auto;
+}
+/* End what in box Section */
