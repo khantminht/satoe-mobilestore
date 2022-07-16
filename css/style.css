@@ -8,7 +8,7 @@ body{
 
 header{
     height: 100vh;
-    background: url("../assets/img/background/bg3.png"),#f4f4f4;
+    background: url("../assets/img/background/bg1.png"),#f4f4f4;
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 30%;
@@ -54,6 +54,7 @@ header{
 
 .btn{
     border: none;
+    box-shadow: none;
 }
 
 .loginbtns{
@@ -142,7 +143,7 @@ header{
 }
 
 #specsection{
-    height: 700px;
+    height: 800px;
 }
 
 .specbtn{
@@ -195,7 +196,7 @@ header{
 }
 
 .card:hover{
-    transform: scale(1.03);
+    transform: scale(1.02);
     box-shadow: 0 5px 10px #999;
 }
 
@@ -227,3 +228,69 @@ header{
     margin: auto;
 }
 /* End what in box Section */
+
+
+/* Start Contact Section */
+.contacts{
+    background:linear-gradient(
+        100deg,
+        rgba(0,0,0,0.8) 50%,
+        rgba(0,0,0,0.5) 30%,
+        transparent 70%
+    ) ,url(../assets/img/background/bg2.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.form-control{
+    color: #fff;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 0;
+}
+
+.form-control:focus{
+    color: #fff;
+    background: transparent;
+    border-bottom: 1px solid yellow;
+    box-shadow: none;
+    
+}
+
+.labels1,.labels2{ 
+    display: block;
+    transition: all 0.3s;
+}
+
+/* End Contact Section */
+
+
+/* Footer Section */
+.footerlinks{
+    color: gray;
+    text-decoration: none;
+
+    transition: all 0.3s;
+}
+
+.footerlinks:hover{
+    color: gray;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.footers{
+    color: gray;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footers:hover{
+    color: gray;
+    text-decoration: underline;
+}
+/* End Footer Section */

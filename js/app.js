@@ -2,15 +2,15 @@
 
 $(window).scroll(function(){
     let getscrolltop = $(this).scrollTop();
-    console.log(getscrolltop);
+    // console.log(getscrolltop);
 
-    if(getscrolltop < 600){
+    if(getscrolltop < 580){
         $(".navmenus").css({
             "background-color":"rgba(255, 255, 255, 0.5)"
         })
     }
 
-    if(getscrolltop >= 600){
+    if(getscrolltop >= 580){
         $(".navbar").addClass("navmenus");
         $(".menuitems").css({
             "color":"#fff",
@@ -42,16 +42,6 @@ $(window).scroll(function(){
 
 // Start Spec Section
 $(document).ready(function(){
-
-    $("#specsection").hide();
-
-    $(window).scroll(function(){
-        var getscrolltop = $(this).scrollTop();
-
-        if(getscrolltop >= ){
-
-        }
-    })
 
     $(".specbtn").click(function(){
         $(this).toggleClass("activespecs").siblings().removeClass("activespecs");
@@ -99,7 +89,7 @@ $(window).scroll(function(){
 
     let getscrolltop = $(this).scrollTop();
 
-    if(getscrolltop >= 1200){
+    if(getscrolltop >= 1400){
 
         $(".navmenus").css({
             "background-color":"rgba(255, 255, 255, 0.5)"
@@ -166,3 +156,50 @@ $(window).scroll(function(){
 
 })
 // End Details Section
+
+
+// Start Content Section
+
+$(window).scroll(function(){
+    let getscrolltop = $(this).scrollTop();
+    console.log(getscrolltop);
+
+    if(getscrolltop >= 7600){
+        $(".navbar").addClass("navmenus");
+
+        $(".navmenus").css({
+            "background-color":"rgba(0, 0, 0, 0.7)"
+        });
+
+        $(".menuitems").css({
+            "color":"#fff",
+            "font-size":"16px"
+        });
+
+        $(".logotexts").css({
+            "color":"#fff"
+        });
+
+        $(".ellpises").addClass("text-light");
+
+    }
+}); 
+
+   
+    $(".inputs1").focus(function(){
+        $(".labels1").effect("shake",1000);
+    });
+
+    $(".inputs2").focus(function(){
+        $(".labels2").effect("shake",1000);
+    });
+
+
+// End Content Section
+    const getyear = $("#getyear")
+    const getfullyear = new Date().getUTCFullYear();
+
+    getyear.text(getfullyear);
+
+//Start Footer Section 
+
