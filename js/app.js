@@ -4,13 +4,23 @@ $(window).scroll(function(){
     let getscrolltop = $(this).scrollTop();
     // console.log(getscrolltop);
 
+    
+    if(getscrolltop >= 50){
+        $(".promotions").fadeOut(500);
+    }else{
+        $(".promotions").fadeIn(1000);
+    }
+
     if(getscrolltop < 580){
         $(".navmenus").css({
             "background-color":"rgba(255, 255, 255, 0.5)"
-        })
+        })   
     }
 
     if(getscrolltop >= 580){
+
+        $(".promotions").fadeOut(1000);
+
         $(".navbar").addClass("navmenus");
         $(".menuitems").css({
             "color":"#fff",
@@ -24,7 +34,9 @@ $(window).scroll(function(){
         $(".ellpises").addClass("text-light");
 
     }else{
+
         $(".navbar").removeClass("navmenus");
+
         $(".menuitems").css({
             "color":"#000",
             "font-size":"18px"
@@ -139,7 +151,7 @@ $(window).scroll(function(){
             "transform":"translate(0)"
         })
 
-        $(".ads").show(1000);
+        // $("#adsmodal").show(1000);
        
     }
 
@@ -165,7 +177,7 @@ $(window).scroll(function(){
 
 $(window).scroll(function(){
     let getscrolltop = $(this).scrollTop();
-    console.log(getscrolltop);
+    // console.log(getscrolltop);
 
     if(getscrolltop >= 7600){
         $(".navbar").addClass("navmenus");
@@ -208,8 +220,11 @@ $(window).scroll(function(){
 
 //Start Footer Section 
 
-    // $(".ads").hide();
-
+// Start Ads Section
+   $(".foradsmodal").mouseleave(function(){
+        $("#adsmodal").modal("show");
+   })
+// End Ads Section
 
     
 

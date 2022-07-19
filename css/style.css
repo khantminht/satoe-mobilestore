@@ -13,6 +13,7 @@ header{
     position: relative;
 }
 
+
 /* Start nav bar */
 .navbar{
     -webkit-backdrop-filter: blur(10px);
@@ -69,6 +70,8 @@ header{
     color: #fff;
     transform: scale(1);
 }
+
+
 /* End nav bar */
 
 /* Start Banner */
@@ -92,6 +95,14 @@ header{
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: backwards;
+}
+
+@media (max-width:768px){
+    .banners{
+        position: absolute;
+        left: 50%;
+        top: 70%;
+    }
 }
 
 @keyframes bannerani {
@@ -186,6 +197,7 @@ header{
 /* End Detail Section */
 
 /* Start Pricing Section */
+
 .card{
  
     transition: all 0.3s;
@@ -351,7 +363,7 @@ header{
 }
 
 .modalbtns:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .modalbtns:active{
