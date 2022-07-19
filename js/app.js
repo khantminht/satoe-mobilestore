@@ -138,6 +138,9 @@ $(window).scroll(function(){
             "opacity":"1",
             "transform":"translate(0)"
         })
+
+        $(".ads").show(1000);
+       
     }
 
     if(getscrolltop >=3400){
@@ -186,12 +189,14 @@ $(window).scroll(function(){
 }); 
 
    
-    $(".inputs1").focus(function(){
-        $(".labels1").effect("shake",1000);
+    $(".contactinput1").focus(function(){
+        $(".contactlabel1").effect("fade",1000);
+        $(".contactinput1").effect("bounce",1000);
     });
 
-    $(".inputs2").focus(function(){
-        $(".labels2").effect("shake",1000);
+    $(".contactinput2").focus(function(){
+        $(".contactlabel2").effect("fade",1000);
+        $(".contactinput2").effect("bounce",1000);
     });
 
 
@@ -202,4 +207,9 @@ $(window).scroll(function(){
     getyear.text(getfullyear);
 
 //Start Footer Section 
+
+    // $(".ads").hide();
+
+
+    
 

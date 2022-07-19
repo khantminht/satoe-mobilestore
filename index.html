@@ -24,15 +24,17 @@
 <body>
 
     <!-- Start Header Section --> 
-    <header>
+    <header class="container-fluid">
 
         <!-- Start nav bar -->
-       <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-md fixed-top">
+        
             <a href="index.html" class="navbar-brand mx-3">
                 <img src="./assets/img/logo/sitelogo.png" width="50px" alt="sitelogo">
                 <span class="h3 mx-2 logotexts">SaToe <span class="h5 text-uppercase logotexts">Mobile Store</span></span>
             </a>
 
+        
             <button type="button" class="navbar-toggler btn btn-sm m-3" data-bs-toggle="collapse" data-bs-target="#nav"><i class="fa-solid fa-ellipsis-vertical ellpises" style="font-size: 25px;"></i></button>
 
             <div id="nav" class="navbar-collapse collapse justify-content-end">
@@ -42,8 +44,12 @@
                     <li class="nav-item"><a href="#products" class="nav-link menuitems">Products</a></li>
                     <li class="nav-item"><a href="#pricing" class="nav-link menuitems">Pricing</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link menuitems">Contact</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link text-white me-3 menuitems loginbtns">Login</a></li>
+                    <li class="nav-item nav-link text-white menuitems me-3 loginbtns" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</li>
                 </ul>
+
+                <!-- <div>
+                    <button class=" text-white menuitems loginbtns" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</button>
+                </div> -->
                 
             </div>
 
@@ -708,13 +714,13 @@
                 <form action="" method="">
 
                     <div class="form-group my-3">
-                        <label class="labels1" for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-control rounded-0 py-2 inputs1" autocomplete="off" placeholder="Enter Your Name" />
+                        <label class="contactlabel1" for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-control rounded-0 py-2 contactinput1" autocomplete="off" placeholder="Enter Your Name" />
                     </div>
 
                     <div class="form-group my-3">
-                        <label class="labels2" for="name">Email</label>
-                        <input type="email" name="email" id="email" class="form-control rounded-0 py-2 inputs2" autocomplete="off"  placeholder="Enter Your Email" />
+                        <label class="contactlabel2" for="name">Email</label>
+                        <input type="email" name="email" id="email" class="form-control rounded-0 py-2 contactinput2" autocomplete="off"  placeholder="Enter Your Email" />
                     </div>
                     
                     <div class="form-check form-switch my-3">
@@ -874,60 +880,96 @@
     </footer>
     <!-- End Footer Section -->
 
-        <!-- login Section -->
+   <!-- Start Modal Area -->	
+	<div id="loginmodal" class="modal fade">
 
-        <div>
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-dialog modal-lg">
-
-                        <div class="modal-body">
-                            <h3>SaToe Mobile</h3>
-                            <button class="button">Close</button>
-
-                            <div>
-                                <form action="" method="">
-
-                                    <div class="form-group">
-                                        <label for="loginemail">Email</label>
-                                        <input type="email" name="email" id="loginemail" class="form-control rounded-0" placeholder="Enter Your Name" autocomplete="off">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label for="loginpassword">Password</label>
-                                        <input type="password" name="password" id="loginpassword" class="form-control rounded-0" placeholder="Enter Your Name" autocomplete="off">
-                                    </div>
-
-                                    <div class="row justify-content-end">
-                                        <button class="btn btn-secondary btn-sm">Cancel</button>
-                                        <button type="submit" class="btn btn-primary btn-sm">Login</button>
-                                    </div>
-
-                                    <div>
-                                        <p>Not Reister Signup Here</p>
-                                    </div>
-
-                                </form>
-
-                                  
-                            </div>
-
-
-
-
-
-
-
-                        </div>
+        <div class="modal-dialog modal-dialog-centered modal-sm">
             
+            <div class="modal-content">
+                <div class="modal-body px-3 py-4">
+                
+                    <div class="text-center m-1">
+                        <img src="./assets/img/logo/sitelogo.png" width="12%" class="me-2 mb-3" alt="site logo">
+                        <span class="h4">SaToe</span>
+                        <span class="h6">Mobile</span>
                     </div>
+    
+                    <form action="" method="">
+    
+                        <div class="form-group px-2 mb-2">
+                            <input type="email" name="loginemail" id="loginemail" class="form-control form-control-md rounded-0 pt-4 modalinputs" placeholder="Enter your Email" autocomplete="off" />
+                            <label class="modallabels" for="loginemail">Email</label>
+                        </div>
+    
+                        <div class="form-group px-2 mb-1">
+                            <input type="email" name="loginpassword" id="loginpassword" class="form-control form-control-md rounded-0 modalinputs" placeholder="Enter your Password" autocomplete="off" />
+                            <label class="modallabels" for="loginpassword">Password</label>
+                        </div>
+
+                        <div class="col-4 d-grid mx-auto">
+								
+                            <button type="submit" class="btn btn-primary btn-md justify-content-center rounded-5 mb-2 modalbtns">Login</button>
+
+                            <h5 class="mx-auto mb-2">or</h5>
+                    
+                        </div>
+
+                        <div>
+                            <button type="button" class="btn btn-danger btn-md justify-content-center rounded-2 mb-3 modalbtns"><i class="fab fa-google mx-1"></i>  Sign in with Google</button>
+
+							<button type="button" class="btn btn-primary btn-md justify-content-center rounded-2 mb-1 modalbtns"><i class="fab fa-facebook-f mx-1"></i>  Sign in with Facebook</button>
+                        </div>
+
+                        <p class="float-end mt-3 mb-0">Not Register! <a href="#">Sign up </a>here</p>
+    
+                    </form>
                 </div>
             </div>
-        </div>
-        <!-- End Login Section -->
 
-    <!-- Start Modal Area -->
-    <!-- End Modal Area -->
+        </div>
+		
+	</div>
+	<!-- End Modal Area -->
+
+    <!-- Ads Section -->
+    <!-- <div class="ads"> 
+        <div>
+            <div class="text-center m-1">
+                <img src="./assets/img/logo/sitelogo.png" width="12%" class="me-2 mb-3" alt="site logo">
+                <span class="h4">SaToe</span>
+                <span class="h6">Mobile</span>
+            </div>
+    
+            <form action="" method="">
+    
+                <div class="form-group px-2 mb-2">
+                    <input type="email" name="loginemail" id="loginemail" class="form-control form-control-md rounded-0 pt-4 modalinputs" placeholder="Enter your Email" autocomplete="off" />
+                    <label class="modallabels" for="loginemail">Email</label>
+                </div>
+    
+                <div class="form-group px-2 mb-1">
+                    <input type="email" name="loginpassword" id="loginpassword" class="form-control form-control-md rounded-0 modalinputs" placeholder="Enter your Password" autocomplete="off" />
+                    <label class="modallabels" for="loginpassword">Password</label>
+                </div>
+    
+                <div class="col-4 d-grid mx-auto">
+                        
+                    <button type="submit" class="btn btn-primary btn-md justify-content-center rounded-5 mb-2 modalbtns">Login</button>
+    
+                    <h5 class="mx-auto mb-2">or</h5>
+            
+                </div>
+    
+                <div>
+                    <button type="button" class="btn btn-danger btn-md justify-content-center rounded-2 mb-3 modalbtns"><i class="fab fa-google mx-1"></i>  Sign in with Google</button>
+    
+                    <button type="button" class="btn btn-primary btn-md justify-content-center rounded-2 mb-1 modalbtns"><i class="fab fa-facebook-f mx-1"></i>  Sign in with Facebook</button>
+                </div>
+    
+            </form>
+        </div>
+    </div> -->
+    <!-- End Ads Section -->
 
 
 

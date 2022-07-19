@@ -2,9 +2,6 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-}
 
 header{
     height: 100vh;
@@ -245,7 +242,7 @@ header{
     background-attachment: fixed;
 }
 
-.form-control{
+.contactinput1,.contactinput2{
     color: #fff;
     background: none;
     border: none;
@@ -253,7 +250,7 @@ header{
     padding: 0;
 }
 
-.form-control:focus{
+.contactinput1:focus{
     color: #fff;
     background: transparent;
     border-bottom: 1px solid yellow;
@@ -261,10 +258,20 @@ header{
     
 }
 
-.labels1,.labels2{ 
+.contactinput2:focus{
+    color: #fff;
+    background: transparent;
+    border-bottom: 1px solid yellow;
+    box-shadow: none;
+    
+}
+
+.contactlabel1,.contactlabel2{ 
     display: block;
     transition: all 0.3s;
 }
+
+
 
 /* End Contact Section */
 
@@ -294,3 +301,77 @@ header{
     text-decoration: underline;
 }
 /* End Footer Section */
+
+/* Modal */
+
+/* .modal{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+} */
+
+.modal-content{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+
+    border-radius: 10px;
+}
+
+.modalinputs{
+    color: #000;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+}
+
+.modalinputs:focus{
+    background: none;
+    border: none;
+    border-bottom: 1px solid steelblue;
+    box-shadow: none;
+}
+
+.modallabels{
+    display: block;
+    transform: translateY(-55px);
+
+    transition: all 0.3s;
+}
+
+.modalinputs:placeholder-shown + .modallabels{
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.modalbtns{
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.modalbtns:hover{
+    transform: scale(1.05);
+}
+
+.modalbtns:active{
+    transform: scale(1);
+}
+/* End Modal */
+
+/* .details4{
+    position: relative;
+}
+
+
+.ads{
+    width: 500px;
+    background: black;
+   
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    z-index: 5;
+} */
