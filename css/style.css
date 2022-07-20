@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+.clicktotopbtn{
+    position: relative;
+    right: 50;
+    bottom: 50;
+}
+
 
 header{
     height: 100vh;
