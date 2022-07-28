@@ -76,8 +76,6 @@ header{
     color: #fff;
     transform: scale(1);
 }
-
-
 /* End nav bar */
 
 /* Start Banner */
@@ -115,8 +113,7 @@ header{
     from{
         opacity: 0;
         transform: translate(-70px);
-    }
-    to{
+    }to{
         opacity: 1;
         transform: translate(0);
     }
@@ -215,7 +212,6 @@ header{
     box-shadow: 0 5px 10px #999;
 }
 
-
 .list-group{
     list-style-type: none;
 }
@@ -289,8 +285,18 @@ header{
     transition: all 0.3s;
 }
 
+.handicons{
+    display: inline-block;
+    transform: translateX(30px);
+    opacity: 0;
 
+    transition: all 0.3s;
+}
 
+.subscribebtns:hover .handicons{
+    transform: translateX(0px);
+    opacity: 1;
+}
 /* End Contact Section */
 
 
