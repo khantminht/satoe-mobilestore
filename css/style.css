@@ -285,7 +285,7 @@ header{
     transition: all 0.3s;
 }
 
-.handicons{
+.handsigns{
     display: inline-block;
     transform: translateX(30px);
     opacity: 0;
@@ -293,10 +293,16 @@ header{
     transition: all 0.3s;
 }
 
-.subscribebtns:hover .handicons{
+.subscribebtns:hover .handsigns{
     transform: translateX(0px);
     opacity: 1;
 }
+
+/* .subscribebtns:hover .handpoints{
+    transform: translateX(0px);
+    opacity: 1;
+} */
+
 /* End Contact Section */
 
 
