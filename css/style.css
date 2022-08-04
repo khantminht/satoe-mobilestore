@@ -2,12 +2,13 @@
     box-sizing: border-box;
 }
 
-.clicktotopbtn{
-    position: relative;
-    right: 50;
-    bottom: 50;
+.modal-open{
+    padding-right: 0 !important;
 }
 
+html{
+    overflow-y: auto !important ;
+}
 
 header{
     height: 100vh;
@@ -310,7 +311,7 @@ header{
 }
 
 .footerlinks:hover{
-    color: gray;
+    color: yellow;
     letter-spacing: 1px;
     text-decoration: underline;
 }
@@ -328,17 +329,10 @@ header{
 /* End Footer Section */
 
 /* Modal */
-
-/* .modal{
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.3);
-} */
-
 .modal-content{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 
     border-radius: 10px;
 }
@@ -383,20 +377,3 @@ header{
     transform: scale(1);
 }
 /* End Modal */
-
-/* .details4{
-    position: relative;
-}
-
-
-.ads{
-    width: 500px;
-    background: black;
-   
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    
-    z-index: 5;
-} */

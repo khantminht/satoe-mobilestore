@@ -4,6 +4,15 @@ $(window).scroll(function(){
     let getscrolltop = $(this).scrollTop();
     // console.log(getscrolltop);
 
+    if(getscrolltop >3){
+        $(".navbar").css({
+            "box-shadow":"0 0 10px #aaa"
+        });
+    }else{
+        $(".navbar").css({
+            "box-shadow":"none"
+        });
+    }
     
     if(getscrolltop >= 50){
         $(".promotions").fadeOut(500);
@@ -25,6 +34,10 @@ $(window).scroll(function(){
         $(".menuitems").css({
             "color":"#fff",
             "font-size":"16px"
+        });
+
+        $(".navbar").css({
+            "box-shadow":"none"
         });
 
         $(".logotexts").css({
@@ -104,7 +117,8 @@ $(window).scroll(function(){
     if(getscrolltop >= 1400){
 
         $(".navmenus").css({
-            "background-color":"rgba(255, 255, 255, 0.5)"
+            "background-color":"rgba(255, 255, 255, 0.5)",
+            "box-shadow":"0 0 10px #aaa"
         })
 
         $(".menuitems").css({
@@ -183,7 +197,8 @@ $(window).scroll(function(){
         $(".navbar").addClass("navmenus");
 
         $(".navmenus").css({
-            "background-color":"rgba(0, 0, 0, 0.7)"
+            "background-color":"rgba(0, 0, 0, 0.7)",
+            "box-shadow":"none"
         });
 
         $(".menuitems").css({
