@@ -10,6 +10,11 @@ html{
     overflow-y: auto !important ;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
+
 header{
     height: 100vh;
     background: url("../assets/img/background/bg1.png"),#f4f4f4;
@@ -377,3 +382,70 @@ header{
     transform: scale(1);
 }
 /* End Modal */
+
+
+/* -------------------------------Start Myself SEction------------------------------- */
+#myself{
+    padding: 0;
+    margin: 0;
+}
+
+.profilebox{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 8px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.profilecard{
+    height: 100px;
+    position: relative;
+}
+
+#line{
+    width: 90%;
+    display: inline-block;
+    place-items: center;
+    border-bottom: 1px dashed #555;
+}
+
+.profilephotos{
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+}
+
+.profilecontents{
+    width: 90%;
+    border-top: 1px dashed #555;
+    border-bottom: 1px dashed #555;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.profiletexts{
+    padding-top: 40px;
+}
+
+.profilecontents > a{
+    color: #333;
+    text-decoration: none;
+}
+
+.profileicons{
+    color: #333;
+    transition: all 0.2s;
+}
+
+.profileicons:hover{
+    color: #111;
+}
+
+/* -------------------------------End Myself SEction------------------------------- */
