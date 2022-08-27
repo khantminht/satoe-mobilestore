@@ -105,7 +105,10 @@ $(document).ready(function(){
     $("#specfeatures").click(function(){
         $(".specfeatures").fadeIn(1000).siblings().hide();
     });
-})
+});
+
+$(document).ready(function(){
+
 
 // End Spec Section
 
@@ -164,9 +167,6 @@ $(window).scroll(function(){
             "opacity":"1",
             "transform":"translate(0)"
         })
-
-        // $("#adsmodal").show(1000);
-       
     }
 
     if(getscrolltop >=3400){
@@ -267,3 +267,5 @@ $(window).scroll(function(){
 
     
 
+
+});

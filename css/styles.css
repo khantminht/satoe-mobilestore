@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
 *{
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
 }
 
 .modal-open{
@@ -11,8 +21,8 @@ html{
 }
 
 body{
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 header{
@@ -318,7 +328,7 @@ header{
 .footerlinks:hover{
     color: yellow;
     letter-spacing: 1px;
-    text-decoration: underline;
+   border-bottom: 0.5px solid #999;
 }
 
 .footers{
@@ -391,9 +401,10 @@ header{
 }
 
 .profilebox{
+    color: #f1f1f1;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     border: none;
     border-radius: 8px;
 
@@ -414,11 +425,12 @@ header{
 }
 
 .profilephotos{
+    display: block;
     border-radius: 50%;
+
     position: absolute;
     left: 50%;
     top: 0;
-
     transform: translateX(-50%);
 }
 
@@ -431,12 +443,31 @@ header{
 }
 
 .profiletexts{
+    font-family: 'Nunito';
     padding-top: 40px;
 }
 
+.profiletexts > .h3{
+    font-family: 'ubuntu';
+}
+
+.profiletexts > .h5{
+    color: #999;
+    font-family: 'concert one';
+    text-transform: none;
+    display: block;
+    margin-top: 30px;
+
+}
+
 .profilecontents > a{
-    color: #333;
+    color: #999;
     text-decoration: none;
+    transition: all 0.3s;
+}
+
+.profilecontents > a:hover{
+    color: #f1f1f1;
 }
 
 .profileicons{
@@ -445,7 +476,7 @@ header{
 }
 
 .profileicons:hover{
-    color: #111;
+    color: #999;
 }
 
 /* -------------------------------End Myself SEction------------------------------- */
